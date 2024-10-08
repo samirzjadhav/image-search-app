@@ -554,15 +554,48 @@ video {
   display: none;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex {
+  display: flex;
 }
 
-.font-bold {
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25rem;
+}
+
+.heading {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.underline {
-  text-decoration-line: underline;
+form {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  height: 50px;
+  width: 60%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
