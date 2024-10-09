@@ -21,5 +21,29 @@ form {
 }
 
 #search-input {
-  @apply w-[60%] mx-w-[400px] py-[10px] px-[20px] h-[50px] border-2 border-gray-300 rounded-lg;
+  @apply w-[60%] max-w-[400px] py-[10px] px-[20px] h-[50px] border-2 border-gray-300 rounded-lg;
+}
+
+#search-button {
+  @apply py-[12px] px-[22px]  bg-[#138065] text-[white] text-[18px] shadow cursor-pointer rounded-md ml-[6px];
+}
+
+.search-results {
+  @apply flex justify-between flex-wrap max-w-[1200px] my-[0] mx-auto;
+}
+
+.search-result {
+  @apply mt-[60px] w-[30%] h-[100%] rounded-md shadow-md overflow-hidden;
+}
+
+.search-result img {
+  @apply w-full h-[100%] object-cover;
+}
+
+.search-result:hover img {
+  @apply opacity-75;
+}
+
+.search-result a {
+  @apply text-xl block p-[10px] capitalize text-black;
 }
