@@ -29,11 +29,11 @@ form {
 }
 
 .search-results {
-  @apply flex justify-between flex-wrap max-w-[1200px] my-[0] mx-auto;
+  @apply flex justify-between flex-wrap max-w-[1200px] my-[0] mx-auto p-[20px] lg:p-0;
 }
 
 .search-result {
-  @apply mt-[60px] w-[30%] h-[100%] rounded-md shadow-md overflow-hidden;
+  @apply mt-[60px] w-[100%] sm:w-[45%] lg:w-[30%] h-[100%] rounded-md shadow-md overflow-hidden;
 }
 
 .search-result img {
@@ -46,4 +46,8 @@ form {
 
 .search-result a {
   @apply text-xl block p-[10px] capitalize text-black;
+}
+
+#show-more-button {
+  @apply bg-[#008cba] text-[18px] text-white py-[12px] px-[20px] rounded-md text-center block cursor-pointer hidden  my-[30px] mx-auto;
 }
