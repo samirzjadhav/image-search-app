@@ -27,9 +27,9 @@ form {
 #search-button {
   @apply py-[12px] px-[22px]  bg-[#138065] text-[white] text-[18px] shadow cursor-pointer rounded-md ml-[6px];
 }
-
+.image-wrapper,
 .search-results {
-  @apply flex justify-between flex-wrap max-w-[1200px] my-[0] mx-auto p-[20px] lg:p-0;
+  @apply flex flex-wrap justify-between max-w-[1200px] mx-auto p-[20px] lg:p-0;
 }
 
 .search-result {
@@ -44,6 +44,7 @@ form {
   @apply opacity-75;
 }
 
+.image-wrapper a,
 .search-result a {
   @apply text-xl block p-[10px] capitalize text-black;
 }

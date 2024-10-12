@@ -3,7 +3,7 @@ const AccessKey = "BZkd-SZtw-p0WMue-uXh3g4v_Gpl1xBGIK1u6Li83zo";
 const formEL = document.querySelector("form");
 const inputEl = document.getElementById("search-input");
 const searchResults = document.querySelector(".search-results"); // Fix: use querySelector
-const showMoreBtn = document.querySelector(".show-more-button");
+const showMoreBtn = document.getElementById("show-more-button");
 
 let inputData = "";
 let page = 1;
@@ -23,7 +23,16 @@ async function searchImages() {
 
   results.forEach((result) => {
     const imageWrapper = document.createElement("div");
-    imageWrapper.classList.add("image-wrapper");
+    imageWrapper.classList.add(
+      "image-wrapper",
+      "w-full",
+      "sm:w-[45%]",
+      "lg:w-[30%]",
+      "mt-[60px]",
+      "rounded-md",
+      "shadow-md",
+      "overflow-hidden"
+    );
 
     const image = document.createElement("img");
     image.src = result.urls.regular; // Ensure the image URL is correct
