@@ -21,7 +21,7 @@ form {
 }
 
 #search-input {
-  @apply w-[60%] max-w-[400px] py-[10px] px-[20px] h-[50px] border-2 border-gray-300 rounded-lg;
+  @apply w-[60%] max-w-[400px] py-[10px] px-[20px] h-[50px] border-2 border-gray-300 rounded-lg shadow-md;
 }
 
 #search-button {
